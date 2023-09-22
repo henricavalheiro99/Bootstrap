@@ -15,9 +15,25 @@ var subtitle = ['do tamanho da sua fome', 'para toda família']
                         <div class="detail-box">
                             <h3 class="title-baianagem">${title[quant]}</h3>
                             <h3 class="subtitle-baianagem">${subtitle[quant]}</h3>
-                            <button class="vermais">Ver Mais</button>
+                            <button class="vermais" onclick="exibir('${title[quant]}')">Ver Mais</button>
                         </div>
                     </div>
                 </div>
            `
     }
+
+var btnVerMais = document.getElementsByClassName('vermais')
+
+function exibir(tipo) {
+    var humburguers = document.getElementsByClassName('hamburguers')
+    var combo = document.getElementsByClassName('combo')
+    if (tipo == 'Hamburguer'){
+        combo[0].style.display = 'none'
+        humburguers[0].style.display = 'flex'
+        humburguers[1].style.display = 'flex'
+    } else if (tipo == 'Combos') {
+        humburguers[0].style.display = 'none'
+        humburguers[1].style.display = 'none'
+        combo[0].style.display = 'flex'
+    }
+}

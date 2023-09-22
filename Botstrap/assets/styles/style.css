@@ -394,3 +394,127 @@ button.vermais{
     margin-bottom: 7px;
 }
 
+/* bannerhumburguer --------------------------------------------------------------------------------- */
+
+.bannerhumburguer{
+    background-image: url(../img/BackgroundSegueGente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+.title-redes {
+    color: var(--amarelo);
+    font-size: 56px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.title-redes::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--amarelo);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.title-redes:hover::after{
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+
+
+.icon-rede{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.icon-rede:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.descricao-rede{
+    margin-bottom: 0;
+    padding-left: 7px;
+    color: white;
+    font-size: 22px;
+}
+
+.fa-instagram,
+.fa-youtube,
+.fa-tiktok{
+    font-size: 35px;
+}
+
+.a-redes{
+    text-decoration: none;
+}
+
+.imgs-cima{
+    height: 165px;
+    width: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.imgs-baixo{
+    height: 125px;
+    width: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.imgs-cima:hover,
+.imgs-baixo:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+    opacity: 1;
+}
+
+/* footer ----------------------------------------------------------------------------------------- */
+
+.footer-esquerda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-direita{
+    padding-top: 12px;
+}
+
+.footer-text{
+    position: relative;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+.footer-text:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
