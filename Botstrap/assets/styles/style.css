@@ -347,7 +347,6 @@ button.vermais{
     position:relative;
     color: var(--vermelho);
     font-size: 32px;
-    padding-bottom: 25px;
     cursor: pointer;
 }
 
@@ -356,11 +355,42 @@ button.vermais{
     transition: 0.8s;
 }
 
+.input,
+#textarea{
+    height: 40px;
+    width: 500px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 13px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    cursor: pointer;
+    margin-left: 4px;
+}
 
+.input:focus, .input:hover,
+#textarea:focus, #textarea:hover {
+    outline: none;
+    border-color: #eb0000;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #fa54541d;
+
+}
+
+.label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 #textarea{
-    border-radius: 13px;
     height: 175px;
     resize: none;
+    margin-bottom: 7px;
 }
 
