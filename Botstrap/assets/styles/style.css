@@ -168,14 +168,199 @@
 .btn-banner:hover{
     transform: scale(1.05);
     transition: 0.8s;
-    background-color: #d70000;
+    background-color: #eb0000;
 }
 
 
 /* banner baixo ------------------------------------------------------------------------------------ */
 
-.imgdividido{
+.duas-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+
+div.img-baianagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 400px;
     height: 230px;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+.img-baianagem:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+ 
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    transition: 0.5s;
+}
+.details div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.details:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.details:hover .detail-box{
+    opacity: 1;
+}
+
+.title-baianagem{
+    color: white;
+    font-size: 28px;
+}
+
+.subtitle-baianagem{
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+}
+
+button.vermais{
+    background-color: #fff;
+    width: 7rem;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+}
+.vermais:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #c5c5c5;
+}
+
+/* Compra ----------------------------------------------------------------------------------------- */
+
+.imgs-compra{
+    width: 80%;
+    height: 180px;
+    border-radius: 20px;
+    transition: 0.8s;
     cursor: pointer;
 }
+
+.imgs-compra:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.compras{
+    align-items: center;
+}
+
+.compras-title{
+    font-size: 32px;
+    color: var(--vermelho);
+    position: relative;
+}
+
+.compras-title::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--vermelho);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.compras-title:hover{
+    transform: scale(1.15);
+    transition: 0.8s;
+}
+
+.compras-title:hover::after{
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+.compras-subtitle{
+    color: rgb(84, 84, 84);
+    font-size: 18px;
+}
+
+.compras-preco{
+    color: #00c514;
+    font-size: 26px;
+}
+
+.compras-btn{
+    background-color: var(--dark-vermelho);
+    border-radius: 30px;
+    border: 1px solid #680000;
+    padding: 5px;
+    box-shadow: 0px 3px 3px #979797;
+    width: 150px;
+    transition: 0.8s;
+}
+
+.a-compras{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.8s;
+}
+
+.compras-btn:hover{
+    transform: scale(1.125);
+    transition: 0.8s;
+    background-color: #eb0000;
+    .a-compras{
+        color: rgb(251, 251, 148);
+    }
+}
+
+/* Forms -------------------------------------------------------------------------------------------- */
+
+.title-forms{
+    position:relative;
+    color: var(--vermelho);
+    font-size: 32px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.title-forms:hover{
+    transform: scale(1.15);
+    transition: 0.8s;
+}
+
+
+
+#textarea{
+    border-radius: 13px;
+    height: 175px;
+    resize: none;
+}
+
