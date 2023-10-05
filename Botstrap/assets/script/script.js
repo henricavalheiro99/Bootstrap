@@ -35,5 +35,6 @@ function exibir(tipo) {
         humburguers[0].style.display = 'none'
         humburguers[1].style.display = 'none'
         combo[0].style.display = 'flex'
+        
     }
 }
